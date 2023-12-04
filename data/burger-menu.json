@@ -1,0 +1,7 @@
+[
+    { "id": "main", "title": "Main" },
+    { "id": "about", "title": "About" },
+    { "id": "cases", "title": "Cases" },
+    { "id": "faq", "title": "FAQ" },
+    { "id": "contact us", "title": "Contact Us" }
+  ]

@@ -1,0 +1,38 @@
+.elec-container {
+  @apply py-[36px] 
+    md:py-[100px]
+    xl:py-[120px];
+}
+
+.elec-wrp {
+  @apply flex flex-col items-center gap-[24px] 
+    xl:gap-[16px];
+}
+
+.elec-title {
+  @apply text-primary text-center text-[28px] leading-[28px] uppercase w-[286px]
+    md:text-[36px] md:leading-[36px]  md:w-[368px]
+    xl:text-[48px] xl:leading-[48px]  xl:w-[491px];
+}
+
+.elec-div {
+  @apply h-[48px] border-r-[1px] border-primary
+    md:h-[87px];
+}
+
+.counter {
+  @apply flex items-center gap-[8px]
+    md:gap-[24px];
+}
+
+.counter-title {
+  @apply text-center text-[48px] leading-[48px] uppercase text-secondary
+    md:text-[100px] md:leading-[100px]  
+    xl:text-[164px] xl:leading-[164px];
+}
+
+.counter-dsc {
+  @apply text-center text-[24px] leading-[24px] text-primary
+    md:text-[28px] md:leading-[48px]  
+    xl:text-[48px];
+}

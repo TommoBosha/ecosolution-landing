@@ -1,0 +1,113 @@
+.header-container {
+  @apply py-[36px] px-[20px] mx-auto max-w-[480px]  flex justify-between items-center fixed w-full top-0 z-10 bg-white
+    md:min-w-[768px]
+    xl:min-w-[1280px];
+}
+
+.button-wrp {
+  @apply md:flex md:gap-[12px] mr-[20px];
+}
+
+.button {
+  @apply hidden
+    md:inline-flex md:py-[10px] md:px-[16px] md:justify-center md:items-center md:gap-[12px] md:rounded-full
+    md:bg-bg_light  md:text-[16px] md:tracking-[-0.64px] md:text-primary md:leading-[19.2px] transition;
+
+  &:hover,
+  &:focus {
+    @apply md:bg-bg_accent md:text-secondary transition;
+
+    & circle {
+      fill: var(--secondary);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.menu-btn {
+  @apply w-[40px] h-[40px] px-3 py-1 transition bg-neutral200  rounded-[500px] justify-center items-center gap-[12px] inline-flex;
+
+  &:hover,
+  &:focus {
+    @apply bg-bg_light transition;
+  }
+}
+
+.burger-backdrop {
+  @apply fixed top-0 left-0 w-screen h-screen bg-backdrop backdrop-blur-[2px] z-[1000];
+}
+
+.menu-container {
+  @apply absolute z-[4] top-[36px] bottom-[36px] right-[20px] w-menu  h-menu  p-[24px] bg-opacity-75 bg-bg_accent backdrop-blur-[12.5px] rounded-[25px]
+  
+    md:w-[320px] md:top-[30px];
+}
+
+.menu-link-wrp {
+  @apply flex flex-col justify-between h-full relative;
+}
+
+.menu-cls-btn {
+  @apply inline-flex items-center gap-[4px] justify-start p-0 text-[16px] leading-[16px] tracking-[0.64px] text-white bg-transparent border-none transition;
+  &:hover,
+  &:focus {
+    @apply transition text-secondary;
+    & > svg {
+      @apply stroke-primary;
+    }
+  }
+}
+
+.menu-svg {
+  @apply stroke-white w-[20px] h-[20px] mt-[1px] transition;
+}
+
+.menu-nav {
+  @apply flex flex-col justify-between border-t-[1px] border-primary pt-[24px];
+}
+
+.menu-nav-item {
+  @apply mb-[8px];
+}
+
+.menu-nav-svg {
+  @apply stroke-trans fill-transparent -rotate-45 w-[16px] h-[16px] transition;
+}
+
+.menu-link {
+  @apply inline-block w-full text-link text-[24px] tracking-[-0.96px] leading-[24px] transition;
+}
+
+.menu-link-content {
+  @apply flex items-center gap-[8px];
+  &:hover,
+  &:focus {
+    @apply transition text-white;
+    & > .menu-nav-svg {
+      @apply stroke-white;
+    }
+  }
+}
+
+.active {
+  @apply text-secondary text-[24px] tracking-[-0.96px] leading-[24px];
+}
+
+.active .menu-nav-svg {
+  @apply stroke-primary;
+}
+
+.social-list-container {
+  @apply mt-auto;
+  & > svg {
+    @apply fill-white;
+  }
+}
+
+.social-list-container .svg-wrp {
+  @apply stroke-white fill-white hover:fill-secondary hover:stroke-primary transition;
+}
+
+.social-list-container .svg-inst {
+  @apply fill-transparent hover:fill-transparent;
+}

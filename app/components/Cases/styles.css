@@ -1,0 +1,112 @@
+.cases-container {
+  @apply mb-[36px]
+    md:mb-[107px]
+    xl:mb-[127px];
+}
+
+.cases-wrp {
+  @apply flex flex-col mb-[20px]
+      md:flex-row md:justify-between md:mb-[38px]
+      xl:mb-[120px];
+}
+
+.cases-title {
+  @apply text-[28px] leading-[28px] mb-[24px] m-0 uppercase
+      md:text-[36px] md:leading-[36px] md:mb-0 w-[264px]
+      xl:text-[48px] xl:leading-[48px] xl:w-[398px];
+}
+
+.pagination-wrp {
+  @apply flex flex-row items-end justify-between text-[28px] tracking-[-1.12px] text-pagination
+      md:w-[362px] md:h-[66px] md:pl-[9px] md:border-l-[1px] border-solid md:border-primary
+      xl:pl-[161px] xl:w-[620px] xl:h-[96px];
+
+  & .swiper-pagination-current {
+    @apply text-primary;
+  }
+}
+
+.btn-wrp {
+  @apply flex gap-[12px]
+      xl:gap-[24px];
+}
+
+.pagination-btn {
+  @apply inline-flex p-[15px] items-start gap-[10px] rounded-[100px] border-secondary border-[1px] bg-transparent transition;
+
+  &:hover,
+  &:focus {
+    @apply border-primary;
+    & > svg {
+      @apply stroke-primary;
+    }
+  }
+}
+
+.pagin-svg-left {
+  @apply w-[36px] h-[36px] rotate-180 fill-transparent stroke-pagination transition;
+}
+
+.pagin-svg-right {
+  @apply w-[36px] h-[36px]  fill-transparent stroke-pagination transition;
+}
+
+.item-container {
+  @apply flex flex-col w-full;
+}
+.item-img-wrap {
+  @apply h-[168px]
+        xl:h-[296px];
+
+  & img {
+    @apply xl:w-full xl:h-full;
+  }
+}
+
+.item-descr {
+  @apply px-[12px] py-0 bg-bg_card  
+        xl:px-[48px] xl:py-0;
+}
+
+.item-wrp-content {
+  @apply flex justify-between items-center h-[112px] border-b-[1px] border-primary
+        xl:h-[130px];
+}
+
+.item-wrp-title {
+  & p {
+    @apply text-start max-w-[230px]  text-[18px] leading-[22px] text-primary tracking-[-0.72px]
+      md:text-[20px] md:leading-[24px]
+          xl:max-w-[380px] xl:text-[24px] xl:leading-[28px];
+  }
+}
+
+.item-btn {
+  @apply inline-flex items-start p-[16px] gap-[10px] rounded-[100px] border-none w-[60px] h-[60px] bg-bg_light transition;
+
+  &:hover,
+  &:focus {
+    @apply bg-bg_accent transition;
+    & > svg {
+      @apply stroke-primary;
+    }
+  }
+}
+.item-svg {
+  @apply stroke-secondary fill-transparent -rotate-45 w-[28px] h-[28px] transition;
+}
+
+.item-text-wrp {
+  @apply flex justify-between py-[12px] px-0
+        xl:pt-[24px] xl:pb-[36px];
+
+  & p {
+    @apply text-[12px] leading-[14px] text-primary tracking-[-0.48px]
+          md:text-[14px]  md:leading-[17px]
+         xl:text-[16px] xl:leading-[19px];
+  }
+}
+
+.item-wrp {
+  @apply md:grid md:grid-cols-[auto,1fr,auto] items-center;
+}

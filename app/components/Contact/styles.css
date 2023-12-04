@@ -1,0 +1,135 @@
+.list {
+  @apply flex gap-[8px];
+}
+
+.svg-wrp {
+  @apply stroke-secondary fill-accent w-[24px] h-[24px] transition;
+  &:hover,
+  &:focus {
+    @apply stroke-primary  fill-secondary transition;
+  }
+}
+
+.svg-inst {
+  @apply fill-transparent hover:fill-transparent;
+}
+
+.contact-title {
+  @apply text-center text-[28px] leading-[28px] uppercase m-0 text-primary
+    md:text-[36px] md:leading-[36px];
+}
+
+.contact-container {
+  @apply grid grid-cols-1 mt-[24px]
+    md:grid-cols-2 md:gap-[20px] md:mt-[40px]
+    xl:mt-[120px];
+}
+
+.contact-wrp {
+  @apply md:flex md:flex-col md:items-start md:justify-start;
+}
+
+.contact-descrp {
+  @apply text-justify text-[16px] tracking-[-0.64px] leading-[16px] mt-[24px] first:mt-0 text-primary;
+}
+
+.contact-link {
+  @apply flex items-center mt-[8px] gap-[8px] text-[20px] tracking-[-0.8px] text-primary transition;
+  &:hover,
+  &:focus {
+    @apply text-secondary transition;
+
+    & .contact-svg {
+      @apply stroke-primary transition;
+    }
+  }
+}
+
+.contact-svg {
+  @apply fill-transparent stroke-secondary w-[24px] h-[24px] transition;
+}
+
+.contact-slc-wrap {
+  @apply mt-[20px] ml-[12px];
+}
+
+.contact-form-wrap {
+  @apply md:grid-cols-2;
+}
+
+.contact-address {
+  @apply max-w-[220px]
+    xl:max-w-none;
+}
+
+.form-container {
+  @apply flex flex-col my-[36px] py-[36px] px-[12px] bg-bg_card
+    md:mb-[100px]  md:px-[24px] md:first:mt-0
+    xl:mb-[120px] xl:px-[48px] xl:py-[48px];
+}
+
+.label {
+  @apply text-[16px] tracking-[-0.64px] mb-[8px];
+}
+
+.input {
+  @apply pb-[8px] text-[18px] tracking-[-0.72px] bg-transparent  border-transparent border-b-primary border-b transition-all;
+  &:hover,
+  &:focus {
+    @apply outline-0 outline-primary border-b border-b-primary;
+  }
+
+  &.textarea {
+    @apply mb-[16px] h-[124px];
+  }
+
+  &:not(.textarea) {
+    @apply mb-[28px];
+  }
+
+  &::after {
+    @apply border-b-primary;
+  }
+
+  &.errorStyles {
+    @apply border-b-err border-b-[1px];
+  }
+}
+
+.err {
+  @apply ml-auto mt-[-16px] text-err text-[12px];
+  &::after {
+    @apply border-b-err;
+  }
+}
+.errorStyles::after {
+  @apply border-b-[1px] border-b-err;
+}
+
+.form-btn-wrp {
+  @apply flex items-center justify-end;
+}
+
+.form-btn {
+  @apply inline-flex items-center justify-center h-[39px]  mb-[2px] rounded-[500px] py-[4px] pr-[4px] pl-[16px]
+    gap-[12px] flex-shrink-0 border-[1px] border-primary text-primary transition
+    
+    xl:mt-[32px];
+
+  &:hover,
+  &:focus {
+    @apply bg-bg_accent text-secondary border-secondary transition;
+  }
+}
+
+.form-btn-text {
+  @apply text-[16px] tracking-[-0.64px] leading-[18px];
+}
+
+.form-svg-wrp {
+  @apply flex items-center justify-center w-[32px] h-[32px] rounded-[50%] border-none bg-bg_light;
+}
+
+.form-svg {
+  @apply w-[16px] h-[16px] stroke-secondary fill-none transition;
+}

@@ -1,0 +1,71 @@
+.about-container {
+  @apply flex flex-col gap-[24px]  justify-between
+     md:flex-row;
+}
+
+.about-header {
+  @apply text-[28px] leading-[28px] uppercase  text-primary m-0
+    md:text-[36px] md:leading-[36px]  md:w-[272px]
+    xl:text-[48px] xl:leading-[48px] xl:w-[365px];
+}
+
+.about-content-wrp {
+  @apply md:w-[354px] md:pl-[11px] md:border-l-[1px] md:border-primary
+    xl:w-[621px] xl:pl-[161px];
+}
+
+.about-contect {
+  @apply text-justify text-[16px] leading-[16px] tracking-[-0.64px] text-primary;
+}
+
+.grid-wrp {
+  @apply grid grid-cols-1 gap-[24px] mt-[36px]
+    md:mt-[100px] md:grid-cols-2
+    xl:gap-[48px] xl:mt-[122px];
+}
+
+.grid-item {
+  @apply grid grid-cols-2 gap-[24px] 
+   
+    xl:gap-[48px];
+}
+
+.grid-card {
+  @apply flex flex-col bg-bg_card h-[197px] px-[12px] py-[13px] box-border
+    md:pt-[12px]
+    xl:h-[339px] xl:w-[274px] xl:px-[24px] xl:py-[48px];
+}
+
+.grid-img {
+  @apply hidden
+    md:block md:h-full md:max-h-[197px] md:object-cover
+    xl:max-h-[339px];
+}
+
+.grid-card-wrap {
+  @apply flex items-center gap-[8px] mb-[33px] box-border
+    md:mb-[51px]
+    xl:mb-[94px];
+}
+
+.grid-svg {
+  @apply w-[16px] h-[16px]
+    xl:w-[24px] xl:h-[24px];
+}
+
+.grid-title {
+  @apply text-primary text-[16px] leading-[24px] uppercase
+    md:text-[18px] 
+    xl:text-[32px] xl:leading-[48px];
+}
+
+.grid-span {
+  @apply min-w-[124px] h-[1px] shrink-0 bg-bg_light mb-[12px]
+    md:w-[135px]
+    xl:mb-[24px] xl:w-[226px];
+}
+
+.grid-desc {
+  @apply text-primary text-justify text-[14px] tracking-[-0.56px] leading-[14px]
+    xl:text-[16px];
+}
